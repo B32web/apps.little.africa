@@ -8,5 +8,10 @@
       { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
     ] }
   ],
-  "functions": { "api/*.js": { "maxDuration": 15 } }
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 15,
+      "memory": 512
+    }
+  }
 }
